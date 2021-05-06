@@ -5,32 +5,18 @@ echo '⚡️ Installing applications'
 
 ## Install casks
 brew install --cask \
-  1password \
-  alfred \
-  appcleaner \
-  basecamp \
-  brave-browser \
-  clockify \
-  discord \
-  docker \
-  dropbox \
-  expressvpn \
+  chromedriver \
+  dbning\
   firefox \
-  gpg-suite-no-mail \
-  hazel \
-  iterm2 \
-  mochi \
-  ngrok \
-  notion \
+  google-chrome\
   phpstorm \
   postman \
-  rectangle \
-  signal \
-  skype \
   slack \
-  spotify \
+  sourcetree \
   tableplus \
-  visual-studio-code
+  tableau \
+  visual-studio-code \
+  webex-meetings
 
 ## Tidy up
 brew cleanup -s
