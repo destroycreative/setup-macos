@@ -1,0 +1,23 @@
+### Docker commands
+# if [ -f $HOME/.docker_aliases ]; then
+#  source $HOME/.docker_aliases
+# fi
+### Support local aliases
+export PROMPT_COMMAND=prompt_command
+alias rla='bashrc=""'
+function prompt_command() {
+  if [[ "$bashrc" != "$PWD" && "$PWD" != "$HOME" && -e .bashrc ]]; then
+    bashrc="$PWD";
+    source .bashrc;
+  fi;
+}
+
+
+export PATH="$PATH:/usr/local/bin/terminus"
+
+# PHP from the currently linked Homebrew PHP version
+export BREW_PHP=/usr/local/var/homebrew/linked/php/bin
+export PATH="$BREW_PHP:$PATH"
+
+# For Valet
+export PATH="$PATH:~/.composer/vendor/bin"
