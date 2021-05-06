@@ -7,30 +7,23 @@ echo '⚡️ Installing applications'
 brew install --cask \
   1password \
   alfred \
-  appcleaner \
-  basecamp \
-  brave-browser \
-  clockify \
-  discord \
+  dbngin \
   docker \
   dropbox \
-  expressvpn \
   firefox \
-  gpg-suite-no-mail \
-  hazel \
-  iterm2 \
   mochi \
-  ngrok \
   notion \
   phpstorm \
-  postman \
-  rectangle \
+  webstorm \
   signal \
   skype \
   slack \
+  sourcetree \
   spotify \
   tableplus \
   visual-studio-code
+
+  
 
 ## Tidy up
 brew cleanup -s
