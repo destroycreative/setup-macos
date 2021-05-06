@@ -1,22 +1,22 @@
 #!/usr/bin/env
 
+# Configure.
+. ./configure-macos.sh
+. ./configure-shell.sh
+
 # Install xcode command line tools.
 . ./install-xcode-select.sh
 
 # Wait for the xcode command line tools to finish installing...
 read -p "Press [Enter] key to continue, once the xcode tools have been installed."
 
-# Install Homebrew and add taps
+# Install Homebrew things.
 . ./install-homebrew.sh
-. ./install-homebrew-taps.sh
 
-# Install command-line tools, applications, and fonts
-. ./install-brews.sh
-. ./install-casks.sh
-. ./install-fonts.sh
+# Install PHP, Valet, Node, Package Managers.
+. ./install-php.sh
 . ./install-composer-packages.sh
+. ./install-front-end.sh
 
-# Configure.
-. ./start-services.sh
-. ./configure-macos.sh
-. ./configure-shell.sh
+# Install Fonts.
+. ./install-fonts.sh
