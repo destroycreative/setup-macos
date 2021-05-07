@@ -22,13 +22,25 @@ mv ./files/ext-xdebug.ini /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini
 php --ini
 
 # Let user check xdebug is installed
-read -p "Note if ext-xdebug.ini is being printed? Press [Enter] key to continue."
+read -p "Note if ext-xdebug.ini is being printed? Should we continue?" -n 1 -r
+echo "If you choose no, please read the documentation for troubleshooting."  
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 
+fi
 
 # Check the version displays Xdebug.
 php -v
 
 # Let user check xdebug is installed
-read -p "Note if Xdebug is being printed? Press [Enter] key to continue."
+read -p "Note if ext-xdebug.ini is being printed? Should we continue?" -n 1 -r
+echo "If you choose no, please read the documentation for troubleshooting."  
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 
+fi
 
 ## Tidy up.
 brew cleanup -s
