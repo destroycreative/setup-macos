@@ -12,6 +12,8 @@ brew tap homebrew/services
 ## Install dns masq seperately due to error in valet install.
 brew install dnsmasq
 
+# Some helpful tools
+brew install wget
 
 ## Install NVM
 brew install nvm
